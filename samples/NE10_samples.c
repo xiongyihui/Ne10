@@ -35,6 +35,7 @@ int matrix_multiply_sample_main(void);
 int     complex_fft_sample_main(void);
 int        real_fft_sample_main(void);
 int             fir_sample_main(void);
+int decimate_sample_main(void);
 
 /*
  * Run all the sample code snippets in series.
@@ -64,6 +65,10 @@ int main(void)
 
     printf("# FIR\n");
     fir_sample_main();
+    printf("\n");
+
+    printf("# Decimate\n");
+    decimate_sample_main();
     printf("\n");
 
     return 0;
